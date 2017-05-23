@@ -1,0 +1,67 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>exercice 1</title>
+</head>
+
+<body>
+		<div id="divTP1">
+    Le <strong>World Wide Web Consortium</strong>, abrégé par le sigle <strong>W3C</strong>, est un
+    <a href="http://fr.wikipedia.org/wiki/Organisme_de_normalisation" title="Organisme de normalisation">organisme de standardisation</a> à but non-lucratif chargé de promouvoir la compatibilité des technologies du <a href="http://fr.wikipedia.org/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a>.<br/>
+</div>
+		
+		<script>
+			// création d'un élément
+			var div=document.createElement('div');
+			var strong1=document.createElement('strong');
+			var strong2=document.createElement('strong');
+			var link1=document.createElement('a');
+			var link2=document.createElement('a');
+			
+			
+			
+			// création d'une texte dans le document
+			var strong1text=document.createTextNode(' World Wide Web Consortium');
+			var strong2text=document.createTextNode('W3C');
+			var link1text=document.createTextNode('organisme de standardisation');
+			var link2text=document.createTextNode('World Wide Web');
+			var text1=document.createTextNode('Le');
+			var text2=document.createTextNode(', abrégé par le sigle ');
+			var text3=document.createTextNode(', est un ');
+			var text4=document.createTextNode(' à but non-lucratif chargé de promouvoir la compatibilité des technologies du ');
+			var text5=document.createTextNode('.');
+			
+			
+			var divTP1=document.getElementById('divTP1');
+			
+			//cas du div
+			div.setAttribute('id','divTP1');
+			
+			//cas du link1
+			link1.setAttribute('href','http://fr.wikipedia.org/wiki/Organisme_de_normalisation');
+			link1.setAttribute('title','Organisme de normalisation');
+			
+			//cas du link2
+			link2.setAttribute('href','http://fr.wikipedia.org/wiki/World_Wide_Web');
+			link2.setAttribute('title','World Wide Web');
+			
+			//mis en place
+			document.body.appendChild(div);
+			divTP1.appendChild(text1);
+			divTP1.appendChild(strong1);
+			strong1.appendChild(strong1text);
+			divTP1.appendChild(text2);
+			divTP1.appendChild(strong2);
+			strong2.appendChild(strong2text);
+			divTP1.appendChild(text3);
+			divTP1.appendChild(link1);
+			link1.appendChild(link1text);
+			divTP1.appendChild(text4);
+			divTP1.appendChild(link2);
+			link2.appendChild(link2text);
+			divTP1.appendChild(text5);
+			
+        </script>
+</body>
+</html>
